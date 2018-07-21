@@ -2,6 +2,186 @@
 	"rasa_nlu_data": {
 		"common_examples": [
 			{
+				"text": "It is so wholesome.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 19,
+						"entity": "default",
+						"start": 0,
+						"value": "It is so wholesome."
+					}
+				]
+			},
+			{
+				"text": "I like paperclips.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 18,
+						"entity": "default",
+						"start": 0,
+						"value": "I like paperclips."
+					}
+				]
+			},
+			{
+				"text": "Union Pacific is a great company.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 33,
+						"entity": "default",
+						"start": 0,
+						"value": "Union Pacific is a great company."
+					}
+				]
+			},
+			{
+				"text": "What is the meaning of life.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 28,
+						"entity": "default",
+						"start": 0,
+						"value": "What is the meaning of life."
+					}
+				]
+			},
+			{
+				"text": "Will loves cheesecake.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 22,
+						"entity": "default",
+						"start": 0,
+						"value": "Will loves cheesecake."
+					}
+				]
+			},
+			{
+				"text": "Water is very healthy.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 22,
+						"entity": "default",
+						"start": 0,
+						"value": "Water is very healthy."
+					}
+				]
+			},
+			{
+				"text": "It is Anjuli's birthday today.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 30,
+						"entity": "default",
+						"start": 0,
+						"value": "It is Anjuli's birthday today."
+					}
+				]
+			},
+			{
+				"text": "Waterbottles are really nice.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 29,
+						"entity": "default",
+						"start": 0,
+						"value": "Waterbottles are really nice."
+					}
+				]
+			},
+			{
+				"text": "My phone runs out of battery a lot.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 35,
+						"entity": "default",
+						"start": 0,
+						"value": "My phone runs out of battery a lot."
+					}
+				]
+			},
+			{
+				"text": "I've got the courage to care.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 29,
+						"entity": "default",
+						"start": 0,
+						"value": "I've got the courage to care."
+					}
+				]
+			},
+			{
+				"text": "Caluiflower's are delicious.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 28,
+						"entity": "default",
+						"start": 0,
+						"value": "Caluiflower's are delicious."
+					}
+				]
+			},
+			{
+				"text": "Hackathons are cool.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 20,
+						"entity": "default",
+						"start": 0,
+						"value": "Hackathons are cool."
+					}
+				]
+			},
+			{
+				"text": "My Dad loves me.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 16,
+						"entity": "default",
+						"start": 0,
+						"value": "My Dad loves me."
+					}
+				]
+			},
+			{
+				"text": "I hate donald trump.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 20,
+						"entity": "default",
+						"start": 0,
+						"value": "I hate donald trump."
+					}
+				]
+			},
+			{
+				"text": "I like to eat pizza.",
+				"intent": "default",
+				"entities": [
+					{
+						"end": 20,
+						"entity": "default",
+						"start": 0,
+						"value": "I like to eat pizza."
+					}
+				]
+			},
+			{
 				"text": "hey",
 				"intent": "greet",
 				"entities": []
@@ -40,7 +220,67 @@
 				"text": "yo",
 				"intent": "greet",
 				"entities": []
+			},
+			{
+				"text": "sup",
+				"intent": "greet",
+				"entities": []
+			},
+			{
+				"text": "cya later",
+				"intent": "bye",
+				"entities": []
+			},
+			{
+				"text": "adieu",
+				"intent": "bye",
+				"entities": []
+			},
+			{
+				"text": "so long",
+				"intent": "bye",
+				"entities": []
+			},
+			{
+				"text": "have a good one",
+				"intent": "bye",
+				"entities": []
+			},
+			{
+				"text": "cya",
+				"intent": "bye",
+				"entities": []
+			},
+			{
+				"text": "cheerio",
+				"intent": "bye",
+				"entities": []
+			},
+			{
+				"text": "bye",
+				"intent": "bye",
+				"entities": []
+			},
+			{
+				"text": "goodbye",
+				"intent": "bye",
+				"entities": []
+			},
+			{
+				"text": "ciao",
+				"intent": "bye",
+				"entities": []
+			},
+			{
+				"text": "adios",
+				"intent": "bye",
+				"entities": []
+			},
+			{
+				"text": "farewell",
+				"intent": "bye",
+				"entities": []
 			}
-        ]
-    }
+		]
+	}
 }

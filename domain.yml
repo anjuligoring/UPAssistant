@@ -1,11 +1,33 @@
 intents:
+  - default
   - greet
+  - bye
+
+entities:
+  - request
+
+slots:
+  request:
+    type: text
 
 templates:
+  utter_default:
+    - "Can you rephrase that?"
+    - "I didn't understand that."
+    - "Invalid request. Please try again."
+    - "Sorry, I can't answer this question."
   utter_greet:
-    - "Hi! How can I help you?"
-    - "Welcome to the Hadoop Chatbot! Ask away!"
-    - "Hello! What would you like to know?"
+    - "Hi! I'm the UP Assistant. How can I help?"
+    - "Welcome to the UP Assistant! Ask me anything!"
+    - "I'm the UP Assistant! How can I be of service?"
+    - "Hello there! I'm the UP Assistant! What can I do for you?"
+  utter_bye:
+    - "Bye!"
+    - "Cya!"
+    - "Goodbye!"
 
 actions:
+  - utter_default
   - utter_greet
+  - utter_bye
+  - actions.ActionGetRequest

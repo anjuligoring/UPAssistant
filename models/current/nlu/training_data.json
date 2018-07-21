@@ -2,6 +2,186 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 19,
+            "entity": "default",
+            "start": 0,
+            "value": "It is so wholesome."
+          }
+        ],
+        "text": "It is so wholesome."
+      },
+      {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 18,
+            "entity": "default",
+            "start": 0,
+            "value": "I like paperclips."
+          }
+        ],
+        "text": "I like paperclips."
+      },
+      {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "default",
+            "start": 0,
+            "value": "Union Pacific is a great company."
+          }
+        ],
+        "text": "Union Pacific is a great company."
+      },
+      {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 28,
+            "entity": "default",
+            "start": 0,
+            "value": "What is the meaning of life."
+          }
+        ],
+        "text": "What is the meaning of life."
+      },
+      {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 22,
+            "entity": "default",
+            "start": 0,
+            "value": "Will loves cheesecake."
+          }
+        ],
+        "text": "Will loves cheesecake."
+      },
+      {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 22,
+            "entity": "default",
+            "start": 0,
+            "value": "Water is very healthy."
+          }
+        ],
+        "text": "Water is very healthy."
+      },
+      {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 30,
+            "entity": "default",
+            "start": 0,
+            "value": "It is Anjuli's birthday today."
+          }
+        ],
+        "text": "It is Anjuli's birthday today."
+      },
+      {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 29,
+            "entity": "default",
+            "start": 0,
+            "value": "Waterbottles are really nice."
+          }
+        ],
+        "text": "Waterbottles are really nice."
+      },
+      {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 35,
+            "entity": "default",
+            "start": 0,
+            "value": "My phone runs out of battery a lot."
+          }
+        ],
+        "text": "My phone runs out of battery a lot."
+      },
+      {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 29,
+            "entity": "default",
+            "start": 0,
+            "value": "I've got the courage to care."
+          }
+        ],
+        "text": "I've got the courage to care."
+      },
+      {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 28,
+            "entity": "default",
+            "start": 0,
+            "value": "Caluiflower's are delicious."
+          }
+        ],
+        "text": "Caluiflower's are delicious."
+      },
+      {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 20,
+            "entity": "default",
+            "start": 0,
+            "value": "Hackathons are cool."
+          }
+        ],
+        "text": "Hackathons are cool."
+      },
+      {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 16,
+            "entity": "default",
+            "start": 0,
+            "value": "My Dad loves me."
+          }
+        ],
+        "text": "My Dad loves me."
+      },
+      {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 20,
+            "entity": "default",
+            "start": 0,
+            "value": "I hate donald trump."
+          }
+        ],
+        "text": "I hate donald trump."
+      },
+      {
+        "intent": "default",
+        "entities": [
+          {
+            "end": 20,
+            "entity": "default",
+            "start": 0,
+            "value": "I like to eat pizza."
+          }
+        ],
+        "text": "I like to eat pizza."
+      },
+      {
         "intent": "greet",
         "text": "hey"
       },
@@ -32,6 +212,54 @@
       {
         "intent": "greet",
         "text": "yo"
+      },
+      {
+        "intent": "greet",
+        "text": "sup"
+      },
+      {
+        "intent": "bye",
+        "text": "cya later"
+      },
+      {
+        "intent": "bye",
+        "text": "adieu"
+      },
+      {
+        "intent": "bye",
+        "text": "so long"
+      },
+      {
+        "intent": "bye",
+        "text": "have a good one"
+      },
+      {
+        "intent": "bye",
+        "text": "cya"
+      },
+      {
+        "intent": "bye",
+        "text": "cheerio"
+      },
+      {
+        "intent": "bye",
+        "text": "bye"
+      },
+      {
+        "intent": "bye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "bye",
+        "text": "ciao"
+      },
+      {
+        "intent": "bye",
+        "text": "adios"
+      },
+      {
+        "intent": "bye",
+        "text": "farewell"
       }
     ],
     "regex_features": [],

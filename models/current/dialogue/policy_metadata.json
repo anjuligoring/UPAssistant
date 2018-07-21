@@ -1,6 +1,14 @@
 {
   "action_fingerprints": {
     "action_listen": {
+      "slots": [
+        "request"
+      ]
+    },
+    "utter_bye": {
+      "slots": []
+    },
+    "action_get_request": {
       "slots": []
     },
     "utter_greet": {

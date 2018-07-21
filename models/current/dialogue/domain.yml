@@ -1,16 +1,38 @@
 action_factory: null
 action_names:
+- utter_default
 - utter_greet
+- utter_bye
+- action_get_request
 actions:
+- utter_default
 - utter_greet
+- utter_bye
+- actions.ActionGetRequest
 config:
   store_entities_as_slots: true
-entities: []
+entities:
+- request
 intents:
+- default
 - greet
-slots: {}
+- bye
+slots:
+  request:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
 templates:
+  utter_bye:
+  - text: Bye!
+  - text: Cya!
+  - text: Goodbye!
+  utter_default:
+  - text: Can you rephrase that?
+  - text: I didn't understand that.
+  - text: Invalid request. Please try again.
+  - text: Sorry, I can't answer this question.
   utter_greet:
-  - text: Hi! How can I help you?
-  - text: Welcome to the Hadoop Chatbot! Ask away!
-  - text: Hello! What would you like to know?
+  - text: Hi! I'm the UP Assistant. How can I help?
+  - text: Welcome to the UP Assistant! Ask me anything!
+  - text: I'm the UP Assistant! How can I be of service?
+  - text: Hello there! I'm the UP Assistant! What can I do for you?

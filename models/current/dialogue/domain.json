@@ -1,9 +1,16 @@
 {
   "states": [
+    "intent_default",
     "intent_greet",
+    "intent_bye",
+    "entity_request",
+    "slot_request_0",
     "prev_action_listen",
     "prev_action_restart",
     "prev_action_default_fallback",
-    "prev_utter_greet"
+    "prev_utter_default",
+    "prev_utter_greet",
+    "prev_utter_bye",
+    "prev_action_get_request"
   ]
 }
