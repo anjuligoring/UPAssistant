@@ -1,0 +1,11 @@
+intents:
+  - greet
+
+templates:
+  utter_greet:
+    - "Hi! How can I help you?"
+    - "Welcome to the Hadoop Chatbot! Ask away!"
+    - "Hello! What would you like to know?"
+
+actions:
+  - utter_greet
