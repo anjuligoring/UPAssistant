@@ -1373,6 +1373,201 @@
 						"value": "OPRJ5470"
 					}
 				]
+			},
+			{
+				"text": "train last completed event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "cart previous event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "equipment recently finished event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "car last event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "car previous event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "cart last completed event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "train last event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "train recently finished event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "equipment last event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "cart recently finished event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "equipment last completed event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "cart last event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "equipment previous event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "car recently finished event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "train previous event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "jofe3580 last completed event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "jofe3580"
+					}
+				]
+			},
+			{
+				"text": "JIOF9485 last event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "JIOF9485"
+					}
+				]
+			},
+			{
+				"text": "IEJF9283 recently finished event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "IEJF9283"
+					}
+				]
+			},
+			{
+				"text": "afjo2082 previous event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "afjo2082"
+					}
+				]
+			},
+			{
+				"text": "OPRJ5470 last event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "OPRJ5470"
+					}
+				]
+			},
+			{
+				"text": "afsd0382 recently finished event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "afsd0382"
+					}
+				]
+			},
+			{
+				"text": "FEHI3498 previous event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "FEHI3498"
+					}
+				]
+			},
+			{
+				"text": "OPRJ5470 last completed event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "OPRJ5470"
+					}
+				]
+			},
+			{
+				"text": "jofe3580 last event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "jofe3580"
+					}
+				]
+			},
+			{
+				"text": "FEHI3498 last completed event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "FEHI3498"
+					}
+				]
 			}
 		]
 	}

@@ -194,3 +194,39 @@ def get_car_service_issues():
         return 'There are no service issues!'
     else:
         return 'WARNING: You have a service issue. Your reference # is ' + data['serviceIssue']['referenceNumber'] + '.'
+
+def get_car_last_completed_event():
+    data = get_data()
+    last_completed_event = data['completedEvents'][0]
+    eta = last_completed_event['dateTime']
+
+    year = eta[:4]
+    month = eta[5:7]
+    day = eta[8:10]
+    hour = (int)(eta[11:13]) % 12
+    min = eta[14:16]
+    if (int)(eta[11:13]) > 12:
+        ampm = "pm"
+    else:
+        ampm = "am"
+
+    switcher = {
+        '01': 'January',
+        '02': 'February',
+        '03': 'March',
+        '04': 'April',
+        '05': 'May',
+        '06': 'June',
+        '07': 'July',
+        '08': 'August',
+        '09': 'September',
+        '10': 'October',
+        '11': 'November',
+        '12': 'December'
+    }
+    month = switcher.get(month, 'Invalid Month')
+    date = month + " " + day + ", " + year
+    time = (str)(hour) + ":" + min + " " + ampm
+    last_event_time = date + " @ " + time
+
+    return 'The last completed event was \"' + last_completed_event['name'] + '\", which occured on ' + last_event_time + '.'

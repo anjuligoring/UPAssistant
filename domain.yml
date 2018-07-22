@@ -11,6 +11,8 @@ intents:
   - car_eta_inform
   - car_service_issues_request
   - car_service_issues_inform
+  - car_last_completed_event_request
+  - car_last_completed_event_inform
   - lance_fritz_request
 
 entities:
@@ -78,4 +80,5 @@ actions:
   - actions.ActionGetCarStatus
   - actions.ActionGetCarETA
   - actions.ActionGetCarServiceIssues
+  - actions.ActionGetCarLastCompletedEvent
   - actions.ActionClearSlots

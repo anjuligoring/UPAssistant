@@ -91,6 +91,21 @@ class ActionGetCarServiceIssues(Action):
             dispatcher.utter_message(service_issues)
         return [SlotSet('is_valid', True)]
 
+class ActionGetCarLastCompletedEvent(Action):
+
+    def name(self):
+        return 'action_get_car_last_completed_event'
+    
+    def run(self, dispatcher, tracker, domain):
+        # Verify Car ID
+        car_id = str(tracker.get_slot('car_id')).upper()
+        if car_id != 'SHMC6134':
+            return [SlotSet('is_valid', False)]
+        else:
+            last_completed_event = data_retrieval.get_car_last_completed_event()
+            dispatcher.utter_message(last_completed_event)
+        return [SlotSet('is_valid', True)]
+
 class ActionClearSlots(Action):
 
     def name(self):
