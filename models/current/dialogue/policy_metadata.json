@@ -3,11 +3,11 @@
     "action_listen": {
       "slots": [
         "request",
-        "location",
-        "car_id"
+        "car_id",
+        "location"
       ]
     },
-    "action_get_car_service_issues": {
+    "action_get_car_status": {
       "slots": [
         "is_valid"
       ]
@@ -25,7 +25,12 @@
         "is_valid"
       ]
     },
-    "action_get_car_status": {
+    "action_get_car_info": {
+      "slots": [
+        "is_valid"
+      ]
+    },
+    "action_get_car_service_issues": {
       "slots": [
         "is_valid"
       ]
@@ -38,16 +43,16 @@
     "utter_bye": {
       "slots": []
     },
-    "action_get_request": {
-      "slots": []
-    },
-    "action_clear_slots": {
-      "slots": []
-    },
     "utter_greet": {
       "slots": []
     },
+    "action_get_request": {
+      "slots": []
+    },
     "utter_lance_fritz": {
+      "slots": []
+    },
+    "action_clear_slots": {
       "slots": []
     }
   },

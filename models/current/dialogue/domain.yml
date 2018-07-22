@@ -12,6 +12,7 @@ action_names:
 - action_store_origin
 - action_store_destination
 - action_get_price_quote
+- action_get_car_info
 - action_get_car_status
 - action_get_car_eta
 - action_get_car_service_issues
@@ -31,6 +32,7 @@ actions:
 - actions.ActionStoreOrigin
 - actions.ActionStoreDestination
 - actions.ActionGetPriceQuote
+- actions.ActionGetCarInfo
 - actions.ActionGetCarStatus
 - actions.ActionGetCarETA
 - actions.ActionGetCarServiceIssues
@@ -52,6 +54,8 @@ intents:
 - location_inform
 - price_quote_request
 - car_id_inform
+- car_info_request
+- car_info_inform
 - car_status_request
 - car_status_inform
 - car_eta_request

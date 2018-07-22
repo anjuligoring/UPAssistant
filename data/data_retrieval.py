@@ -137,8 +137,15 @@ def get_data():
 
 def get_car_info():
     data = get_data()
-
     
+    car_id = data['id']
+    car_type = data['carType']
+    empty = data['empty']
+    if empty == 'true':
+        return car_id + ' is an empty ' + car_type + ' car.'
+    else:
+        commodity = data['commodity']
+        return car_id + ' is a(n) ' + car_type + ' full of ' + commodity + '.'
 
 def get_car_status():
     data = get_data()

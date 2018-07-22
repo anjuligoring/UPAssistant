@@ -52,7 +52,14 @@ class ActionGetCarInfo(Action):
         return 'action_get_car_info'
     
     def run(self, dispatcher, tracker, domain):
-        return []
+        # Verify Car ID
+        car_id = str(tracker.get_slot('car_id')).upper()
+        if car_id != 'SHMC6134':
+            return [SlotSet('is_valid', False)]
+        else:
+            info = data_retrieval.get_car_info()
+            dispatcher.utter_message(info)
+        rreturn [SlotSet('is_valid', True)]
 
 class ActionGetCarStatus(Action):
 

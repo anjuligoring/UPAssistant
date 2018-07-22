@@ -30,6 +30,41 @@
 
 <!--- CAR -->
 
+## car specifics 1
+* car_id_inform{"car_id": "SHMC6134"}
+    - utter_car_specifics
+
+## car specifics 2
+* car_id_inform{"car_id": null}
+    - utter_invalid
+
+<!-- info -->
+## car_info_request 1
+* car_info_request
+    - utter_ask_car_id
+* car_id_inform{"car_id": "SHMC6134"}
+    - action_get_car_info
+    - slot{"is_valid": true}
+
+## car_info_request 2
+* car_info_request
+    - utter_ask_car_id
+* car_id_inform{"car_id": null}
+    - action_get_car_info
+    - slot{"is_valid": false}
+    - utter_invalid
+
+## car_info_inform 1
+* car_info_inform{"car_id": "SHMC6134"}
+    - action_get_car_info
+    - slot{"is_valid": true}
+
+## car_info_inform 2
+* car_info_inform{"car_id": null}
+    - action_get_car_info
+    - slot{"is_valid": false}
+    - utter_invalid
+
 <!-- status -->
 ## car_status_request 1
 * car_status_request
@@ -152,7 +187,7 @@
 * car_id_inform{"car_id": "null"}
     - action_get_car_next_scheduled_event
     - slot{"is_valid": false}
-    - utter_invalid
+    <!-- - utter_invalid -->
 
 ## car_next_scheduled_event_inform 1
 * car_next_scheduled_event_inform{"car_id": "SHMC6134"}
@@ -163,4 +198,4 @@
 * car_next_scheduled_event_inform{"car_id": "null"}
     - action_get_car_next_scheduled_event
     - slot{"is_valid": false}
-    - utter_invalid
+    <!-- - utter_invalid -->

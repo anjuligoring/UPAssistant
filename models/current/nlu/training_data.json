@@ -722,6 +722,246 @@
         "text": "IJFN2822"
       },
       {
+        "intent": "car_info_request",
+        "text": "car information"
+      },
+      {
+        "intent": "car_info_request",
+        "text": "equipment info"
+      },
+      {
+        "intent": "car_info_request",
+        "text": "train details"
+      },
+      {
+        "intent": "car_info_request",
+        "text": "cart summary"
+      },
+      {
+        "intent": "car_info_request",
+        "text": "equipment description"
+      },
+      {
+        "intent": "car_info_request",
+        "text": "cart report"
+      },
+      {
+        "intent": "car_info_request",
+        "text": "car description"
+      },
+      {
+        "intent": "car_info_request",
+        "text": "train information"
+      },
+      {
+        "intent": "car_info_request",
+        "text": "car info"
+      },
+      {
+        "intent": "car_info_request",
+        "text": "train report"
+      },
+      {
+        "intent": "car_info_request",
+        "text": "equipment details"
+      },
+      {
+        "intent": "car_info_request",
+        "text": "equipment summary"
+      },
+      {
+        "intent": "car_info_request",
+        "text": "train description"
+      },
+      {
+        "intent": "car_info_request",
+        "text": "cart information"
+      },
+      {
+        "intent": "car_info_request",
+        "text": "car details"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "ABCD1234"
+          }
+        ],
+        "text": "ABCD1234 summary"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "kjwe3867"
+          }
+        ],
+        "text": "kjwe3867 report"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "omdv0298"
+          }
+        ],
+        "text": "omdv0298 information"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "ksbn2093"
+          }
+        ],
+        "text": "ksbn2093 details"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "UWTY8973"
+          }
+        ],
+        "text": "UWTY8973 info"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "WKEJ2092"
+          }
+        ],
+        "text": "WKEJ2092 description"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "WILL0521"
+          }
+        ],
+        "text": "WILL0521 description"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "omdv0298"
+          }
+        ],
+        "text": "omdv0298 info"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "WILL0521"
+          }
+        ],
+        "text": "WILL0521 report"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "ksbn2093"
+          }
+        ],
+        "text": "ksbn2093 summary"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "UWTY8973"
+          }
+        ],
+        "text": "UWTY8973 information"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "ABCD1234"
+          }
+        ],
+        "text": "ABCD1234 details"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "WKEJ2092"
+          }
+        ],
+        "text": "WKEJ2092 info"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "kjwe3867"
+          }
+        ],
+        "text": "kjwe3867 details"
+      },
+      {
+        "intent": "car_info_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "WILL0521"
+          }
+        ],
+        "text": "WILL0521 summary"
+      },
+      {
         "intent": "car_status_request",
         "text": "car status"
       },

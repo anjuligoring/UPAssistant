@@ -64,6 +64,17 @@ templates:
     - "What is your destination? (Omaha, NE)"
   utter_ask_car_id:
     - "What is the car id?"
+  utter_car_specifics:
+    - text: "Car Specifics"
+      buttons:
+        - title: "Status"
+          payload: "car status"
+        - title: "Description"
+          payload: "car description"
+        - title: "Last Completed Event"
+          payload: "car last completed event"
+        - title: "Next Scheduled Event"
+          payload: "car next scheduled event"
   utter_lance_fritz:
   - text: "You're welcome."
     image: "https://www.up.com/cs/groups/public/@uprr/@corprel/documents/digitalmedia/img_up_exec-lance-fritz.jpg"
