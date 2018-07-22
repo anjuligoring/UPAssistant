@@ -15,6 +15,8 @@
 * lance_fritz_request
     - utter_lance_fritz
 
+<!-- PRICE QUOTE -->
+
 ## price_quote_request
 * price_quote_request
     - utter_ask_origin
@@ -79,5 +81,32 @@
 ## car_eta_inform 2
 * car_eta_inform{"car_id": "null"}
     - action_get_car_eta
+    - slot{"is_valid": false}
+    - utter_invalid
+
+<!-- service issues -->
+## car_service_issues_request 1
+* car_service_issues_request
+    - utter_ask_car_id
+* car_id_inform"car_id": "SHMC6134"}
+    - action_get_car_service_issues
+    - slot{"is_valid": true}
+
+## car_service_issues_request 2
+* car_service_issues_request
+    - utter_ask_car_id
+* car_id_inform"car_id": "null"}
+    - action_get_car_service_issues
+    - slot{"is_valid": false}
+    - utter_invalid
+
+## car_service_issues_inform 1
+* car_service_issues_inform{"car_id": "SHMC6134"}
+    - action_get_car_service_issues
+    - slot{"is_valid": true}
+
+## car_service_issues_inform 2
+* car_service_issues_inform{"car_id": "null"}
+    - action_get_car_service_issues
     - slot{"is_valid": false}
     - utter_invalid

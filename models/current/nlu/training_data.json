@@ -1140,6 +1140,166 @@
           }
         ],
         "text": "afsd0382 arrival time"
+      },
+      {
+        "intent": "car_service_issues_request",
+        "text": "equipment service issues"
+      },
+      {
+        "intent": "car_service_issues_request",
+        "text": "cart errors"
+      },
+      {
+        "intent": "car_service_issues_request",
+        "text": "car problems"
+      },
+      {
+        "intent": "car_service_issues_request",
+        "text": "train issues"
+      },
+      {
+        "intent": "car_service_issues_request",
+        "text": "equipment errors"
+      },
+      {
+        "intent": "car_service_issues_request",
+        "text": "car service issues"
+      },
+      {
+        "intent": "car_service_issues_request",
+        "text": "cart problems"
+      },
+      {
+        "intent": "car_service_issues_request",
+        "text": "car errors"
+      },
+      {
+        "intent": "car_service_issues_request",
+        "text": "train service issues"
+      },
+      {
+        "intent": "car_service_issues_request",
+        "text": "equipment issues"
+      },
+      {
+        "intent": "car_service_issues_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "afjo2082"
+          }
+        ],
+        "text": "afjo2082 issues"
+      },
+      {
+        "intent": "car_service_issues_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "IEJF9283"
+          }
+        ],
+        "text": "IEJF9283 errors"
+      },
+      {
+        "intent": "car_service_issues_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "JIOF9485"
+          }
+        ],
+        "text": "JIOF9485 service issues"
+      },
+      {
+        "intent": "car_service_issues_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "FEHI3498"
+          }
+        ],
+        "text": "FEHI3498 problems"
+      },
+      {
+        "intent": "car_service_issues_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "afsd0382"
+          }
+        ],
+        "text": "afsd0382 problems"
+      },
+      {
+        "intent": "car_service_issues_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "jofe3580"
+          }
+        ],
+        "text": "jofe3580 errors"
+      },
+      {
+        "intent": "car_service_issues_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "OPRJ5470"
+          }
+        ],
+        "text": "OPRJ5470 service issues"
+      },
+      {
+        "intent": "car_service_issues_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "afsd0382"
+          }
+        ],
+        "text": "afsd0382 issues"
+      },
+      {
+        "intent": "car_service_issues_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "afjo2082"
+          }
+        ],
+        "text": "afjo2082 problems"
+      },
+      {
+        "intent": "car_service_issues_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "OPRJ5470"
+          }
+        ],
+        "text": "OPRJ5470 errors"
       }
     ],
     "regex_features": [],

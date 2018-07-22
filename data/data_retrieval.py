@@ -187,3 +187,10 @@ def get_car_eta():
     date = month + " " + day + ", " + year
     time = (str)(hour) + ":" + min + " " + ampm
     return date + " @ " + time
+
+def get_car_service_issues():
+    data = get_data()
+    if('serviceIssue' not in data):
+        return 'There are no service issues!'
+    else:
+        return 'WARNING: You have a service issue. Your reference # is ' + data['serviceIssue']['referenceNumber'] + '.'

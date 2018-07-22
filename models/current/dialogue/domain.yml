@@ -14,6 +14,7 @@ action_names:
 - action_get_price_quote
 - action_get_car_status
 - action_get_car_eta
+- action_get_car_service_issues
 - action_clear_slots
 actions:
 - utter_default
@@ -30,6 +31,7 @@ actions:
 - actions.ActionGetPriceQuote
 - actions.ActionGetCarStatus
 - actions.ActionGetCarETA
+- actions.ActionGetCarServiceIssues
 - actions.ActionClearSlots
 config:
   store_entities_as_slots: true
@@ -50,6 +52,8 @@ intents:
 - car_status_inform
 - car_eta_request
 - car_eta_inform
+- car_service_issues_request
+- car_service_issues_inform
 - lance_fritz_request
 slots:
   car_id:

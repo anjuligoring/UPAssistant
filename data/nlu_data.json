@@ -1203,6 +1203,176 @@
 						"value": "afsd0382"
 					}
 				]
+			},
+			{
+				"text": "equipment service issues",
+				"intent": "car_service_issues_request",
+				"entities": []
+			},
+			{
+				"text": "cart errors",
+				"intent": "car_service_issues_request",
+				"entities": []
+			},
+			{
+				"text": "car problems",
+				"intent": "car_service_issues_request",
+				"entities": []
+			},
+			{
+				"text": "train issues",
+				"intent": "car_service_issues_request",
+				"entities": []
+			},
+			{
+				"text": "equipment errors",
+				"intent": "car_service_issues_request",
+				"entities": []
+			},
+			{
+				"text": "car service issues",
+				"intent": "car_service_issues_request",
+				"entities": []
+			},
+			{
+				"text": "cart problems",
+				"intent": "car_service_issues_request",
+				"entities": []
+			},
+			{
+				"text": "car errors",
+				"intent": "car_service_issues_request",
+				"entities": []
+			},
+			{
+				"text": "train service issues",
+				"intent": "car_service_issues_request",
+				"entities": []
+			},
+			{
+				"text": "equipment issues",
+				"intent": "car_service_issues_request",
+				"entities": []
+			},
+			{
+				"text": "afjo2082 issues",
+				"intent": "car_service_issues_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "afjo2082"
+					}
+				]
+			},
+			{
+				"text": "IEJF9283 errors",
+				"intent": "car_service_issues_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "IEJF9283"
+					}
+				]
+			},
+			{
+				"text": "JIOF9485 service issues",
+				"intent": "car_service_issues_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "JIOF9485"
+					}
+				]
+			},
+			{
+				"text": "FEHI3498 problems",
+				"intent": "car_service_issues_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "FEHI3498"
+					}
+				]
+			},
+			{
+				"text": "afsd0382 problems",
+				"intent": "car_service_issues_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "afsd0382"
+					}
+				]
+			},
+			{
+				"text": "jofe3580 errors",
+				"intent": "car_service_issues_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "jofe3580"
+					}
+				]
+			},
+			{
+				"text": "OPRJ5470 service issues",
+				"intent": "car_service_issues_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "OPRJ5470"
+					}
+				]
+			},
+			{
+				"text": "afsd0382 issues",
+				"intent": "car_service_issues_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "afsd0382"
+					}
+				]
+			},
+			{
+				"text": "afjo2082 problems",
+				"intent": "car_service_issues_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "afjo2082"
+					}
+				]
+			},
+			{
+				"text": "OPRJ5470 errors",
+				"intent": "car_service_issues_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "OPRJ5470"
+					}
+				]
 			}
 		]
 	}

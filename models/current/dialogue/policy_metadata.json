@@ -2,14 +2,9 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "car_id",
+        "location",
         "request",
-        "location"
-      ]
-    },
-    "action_get_car_eta": {
-      "slots": [
-        "is_valid"
+        "car_id"
       ]
     },
     "action_get_car_status": {
@@ -20,19 +15,29 @@
     "utter_invalid": {
       "slots": []
     },
+    "action_get_car_eta": {
+      "slots": [
+        "is_valid"
+      ]
+    },
     "action_clear_slots": {
+      "slots": []
+    },
+    "action_get_car_service_issues": {
+      "slots": [
+        "is_valid"
+      ]
+    },
+    "utter_lance_fritz": {
+      "slots": []
+    },
+    "utter_greet": {
       "slots": []
     },
     "action_get_request": {
       "slots": []
     },
     "utter_bye": {
-      "slots": []
-    },
-    "utter_greet": {
-      "slots": []
-    },
-    "utter_lance_fritz": {
       "slots": []
     }
   },
