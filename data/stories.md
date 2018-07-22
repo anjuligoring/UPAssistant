@@ -137,6 +137,23 @@
 * car_id_inform{"car_id": "ANJU2449"}
     - action_get_car_service_issues
     - slot{"is_valid": true}
+    - utter_ask_specifics
+
+## car_service_issues_request 2
+* car_service_issues_request
+    - utter_ask_car_id
+* car_id_inform{"car_id": "ANJU2449"}
+    - action_get_car_service_issues
+    - slot{"is_valid": true}
+    - utter_ask_specifics
+
+## car_service_issues_request 3
+* affirm
+    - action_get_car_service_issues_url
+    - utter_car_specifics
+
+## car_service_issues_request 4
+* deny
     - utter_car_specifics
 
 ## car_service_issues_request 2

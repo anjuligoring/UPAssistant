@@ -8,6 +8,7 @@ action_names:
 - utter_ask_destination
 - utter_ask_car_id
 - utter_car_specifics
+- utter_ask_specifics
 - utter_lance_fritz
 - action_get_request
 - action_store_origin
@@ -18,6 +19,7 @@ action_names:
 - action_get_car_status
 - action_get_car_eta
 - action_get_car_service_issues
+- action_get_car_service_issues_url
 - action_get_car_last_completed_event
 - action_get_car_next_scheduled_event
 - action_clear_slots
@@ -30,6 +32,7 @@ actions:
 - utter_ask_destination
 - utter_ask_car_id
 - utter_car_specifics
+- utter_ask_specifics
 - utter_lance_fritz
 - actions.ActionGetRequest
 - actions.ActionStoreOrigin
@@ -40,6 +43,7 @@ actions:
 - actions.ActionGetCarStatus
 - actions.ActionGetCarETA
 - actions.ActionGetCarServiceIssues
+- actions.ActionGetCarServiceIssuesURL
 - actions.ActionGetCarLastCompletedEvent
 - actions.ActionGetCarNextScheduledEvent
 - actions.ActionClearSlots
@@ -55,6 +59,8 @@ intents:
 - default
 - greet
 - bye
+- affirm
+- deny
 - location_inform
 - price_quote_request
 - car_id_inform
@@ -97,6 +103,13 @@ templates:
   - text: What is your destination? (Omaha, NE)
   utter_ask_origin:
   - text: What is your origin? (Omaha, NE)
+  utter_ask_specifics:
+  - buttons:
+    - payload: yes
+      title: Yes
+    - payload: no
+      title: No
+    text: More specifics?
   utter_bye:
   - text: Bye!
   - text: Cya!
@@ -107,6 +120,8 @@ templates:
       title: Status
     - payload: '{car_id} eta'
       title: ETA
+    - payload: '{car_id} service issues'
+      title: Service Issues
     - payload: '{car_id} description'
       title: Description
     - payload: '{car_id} last completed event'

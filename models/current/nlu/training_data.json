@@ -262,6 +262,30 @@
         "text": "farewell"
       },
       {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "Yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "Yep"
+      },
+      {
+        "intent": "deny",
+        "text": "no"
+      },
+      {
+        "intent": "deny",
+        "text": "No"
+      },
+      {
+        "intent": "deny",
+        "text": "Nay"
+      },
+      {
         "intent": "lance_fritz_request",
         "text": "picture of lance"
       },
@@ -1456,6 +1480,30 @@
           }
         ],
         "text": "JIOF9485 service issues"
+      },
+      {
+        "intent": "car_service_issues_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "idjw2834"
+          }
+        ],
+        "text": "idjw2834 service issues"
+      },
+      {
+        "intent": "car_service_issues_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "OFIW8566"
+          }
+        ],
+        "text": "OFIW8566 service issues"
       },
       {
         "intent": "car_service_issues_inform",

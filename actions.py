@@ -118,6 +118,15 @@ class ActionGetCarServiceIssues(Action):
             dispatcher.utter_message(service_issues)
         return [SlotSet('is_valid', True)]
 
+class ActionGetCarServiceIssuesURL(Action):
+
+    def name(self):
+        return 'action_get_car_service_issues_url'
+
+    def run(self, dispatcher, tracker, domain):
+        car_id = str(tracker.get_slot('car_id')).upper()
+        return 'http://198.47.241.137:1337/serviceIssues/' + car_id
+
 class ActionGetCarLastCompletedEvent(Action):
 
     def name(self):

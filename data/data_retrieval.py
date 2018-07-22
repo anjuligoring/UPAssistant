@@ -97,7 +97,7 @@ def get_car_eta(car_id):
 # Retrieves service issues
 def get_car_service_issues(car_id):
     data = get_data(car_id)
-    if('serviceIssue' not in data):
+    if ('serviceIssue' not in data):
         return 'There are no service issues!'
     else:
         return 'WARNING: You have a service issue. Your reference # is ' + data['serviceIssue']['referenceNumber'] + '.'

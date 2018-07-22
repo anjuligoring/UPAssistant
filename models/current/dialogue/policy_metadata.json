@@ -2,10 +2,29 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
+        "request",
         "location",
-        "car_id",
-        "request"
+        "car_id"
       ]
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "action_get_car_last_completed_event": {
+      "slots": [
+        "is_valid"
+      ]
+    },
+    "utter_invalid": {
+      "slots": []
+    },
+    "action_get_car_service_issues": {
+      "slots": [
+        "is_valid"
+      ]
+    },
+    "utter_ask_specifics": {
+      "slots": []
     },
     "action_get_car_status": {
       "slots": [
@@ -13,6 +32,19 @@
       ]
     },
     "utter_car_specifics": {
+      "slots": []
+    },
+    "action_get_car_info": {
+      "slots": [
+        "is_valid"
+      ]
+    },
+    "action_get_car_next_scheduled_event": {
+      "slots": [
+        "is_valid"
+      ]
+    },
+    "utter_lance_fritz": {
       "slots": []
     },
     "action_get_request": {
@@ -23,28 +55,7 @@
         "is_valid"
       ]
     },
-    "utter_invalid": {
-      "slots": []
-    },
-    "utter_lance_fritz": {
-      "slots": []
-    },
     "action_get_car_eta": {
-      "slots": [
-        "is_valid"
-      ]
-    },
-    "action_get_car_service_issues": {
-      "slots": [
-        "is_valid"
-      ]
-    },
-    "action_get_car_info": {
-      "slots": [
-        "is_valid"
-      ]
-    },
-    "action_get_car_last_completed_event": {
       "slots": [
         "is_valid"
       ]
@@ -53,14 +64,6 @@
       "slots": []
     },
     "action_clear_slots": {
-      "slots": []
-    },
-    "action_get_car_next_scheduled_event": {
-      "slots": [
-        "is_valid"
-      ]
-    },
-    "utter_greet": {
       "slots": []
     }
   },

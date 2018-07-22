@@ -288,6 +288,36 @@
 				"entities": []
 			},
 			{
+				"text": "yes",
+				"intent": "affirm",
+				"entities": []
+			},
+			{
+				"text": "Yes",
+				"intent": "affirm",
+				"entities": []
+			},
+			{
+				"text": "Yep",
+				"intent": "affirm",
+				"entities": []
+			},
+			{
+				"text": "no",
+				"intent": "deny",
+				"entities": []
+			},
+			{
+				"text": "No",
+				"intent": "deny",
+				"entities": []
+			},
+			{
+				"text": "Nay",
+				"intent": "deny",
+				"entities": []
+			},
+			{
 				"text": "picture of lance",
 				"intent": "lance_fritz_request",
 				"entities": []
@@ -1548,6 +1578,30 @@
 						"entity": "car_id",
 						"start": 0,
 						"value": "JIOF9485"
+					}
+				]
+			},
+			{
+				"text": "idjw2834 service issues",
+				"intent": "car_service_issues_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "idjw2834"
+					}
+				]
+			},
+			{
+				"text": "OFIW8566 service issues",
+				"intent": "car_service_issues_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "OFIW8566"
 					}
 				]
 			},
