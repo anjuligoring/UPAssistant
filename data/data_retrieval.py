@@ -45,20 +45,17 @@ def get_car_info(car_id):
 # Retrieves & calculates percentage of journey completed
 def get_car_status(car_id):
     data = get_data(car_id)
-
-    num_completed = 0.0
+    
     completed_events = data['completedEvents']
-    for event in completed_events:
-        if event['name'] == 'Arrived':
-            num_completed = num_completed + 1
+    num_completed = float(len(completed_events))
     
-    num_remaining = 0.0
     remaining_events = data['scheduledEvents']
-    for event in remaining_events:
-        if event['name'] == 'Scheduled Departure':
-            num_remaining = num_remaining + 1
+    num_remaining = float(len(remaining_events))
     
-    completion_percent = float(num_completed / (num_completed + num_remaining))
+    if (num_completed == 0 and num_remaining == 0):
+        return 'Progress: 0%'
+    denominator = num_completed + num_remaining
+    completion_percent = (num_completed / denominator)
     completion_percent = "{0:.2%}".format(completion_percent)
 
     return 'Progress: ' + completion_percent
