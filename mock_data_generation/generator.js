@@ -28,11 +28,28 @@ app.get('/car/:id', async (req, res)=>{
     res.send(car);
 })
 
+app.get('/index-service-issues/:num', async (req, res)=>{
+    let db = new dbConnection();
+    let serviceIssues = await makeADaServiceIssues(req.params.num);
+    db.insertServiceIssues(serviceIssues);
+    res.send("SUCCESS");
+})
+app.get('/serviceIssues/:id', async(req, res)=>{
+    let db = new dbConnection();
+    let ServiceIssues = await db.findServiceIssues(req.params.id);
+    res.send(ServiceIssues);
+})
+
 var idPrefix = ['SHMC', 'FRAN', 'CHRI', 'ANJU', 'USLS', 'ILSS'];
 var commodities = ['Corn', 'Oats', 'Rice', 'Soybeans', 'Rapeseed', 'Wheat',  'Milk', 'Cocoa',
  'Coffee','Cotton', 'Cattle', 'Hogs', 'Feeder Cattle','Crude Oil', 'Ethanol', 'Natural gas', 'Heating Oil'];
 var carTypes = ['Boxcar', 'CenterBeam', 'Covered hopper', 'Covered wagon', 'Double door boxcar', 'Gondola', 'Intermodal', 'Baggage Car', 'Bilevel car', 'Coach', 'Boxmotor', 'Refreigerated Car'];
 var eventName = ['Released for Movement', 'Pulled from Industry', 'Arrived', 'Departed', 'General Hold', 'Released from Hold'];
+var reasons = ['Broken Wheel', 'Load Shift', 'Load Too big (uh oh)', 'Missing Car', 'Too many Hobos', 'Not Enough Hobos', 'Tornado', 'Damaged Cargo'];
+var statuses = ["Service Plan Available", "Service Plan Not Available"];
+var authors = ['Lance Fritz', 'Jimmy Nutron', 'Anjuli Goring', 'Santa Claus', 'Jimmy Johns', 'Chris Gu', 'Isabell Smith'];
+var companies = ['Jimmy Johns', 'VIPAR heavy duty', 'Union Pacific', 'buildertrend', 'Urban Lumber', 'BNSF', 'BIG DOGS and COFFEE?', "Toys 'R' Us"]
+var lorem = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
 function location(state, city){
     return {
         state: state,
@@ -47,6 +64,15 @@ function massProduceThatShit(num){
         cars.push(createCar());
     }
     return cars;
+}
+async function makeADaServiceIssues(num){
+    let db = new dbConnection();
+    var cars = await db.getAll();
+    var serviceIssues = [];
+    for(let i = 0; i < num; i++){
+        serviceIssues.push(createServiceIssue(cars[i].id));
+    }
+    return serviceIssues;
 }
 
 function createCar(){
@@ -100,4 +126,31 @@ function createEvents(type, starting, eventArr, car){
         event.location = randomSelect(locations);
         eventArr.push(event);
     }
+}
+
+function createServiceIssue(id){
+    var refNum = randNum(0, 9999);
+    return {
+        dateOpened: randomDate(new Date(), new Date(2012, 0, 1)),
+        dateUpdated: randomDate(new Date(), new Date(2012, 0, 1)),
+        reason: randomSelect(reasons),
+        status: randomSelect(statuses),
+        equipmentId: id,
+        referenceNumber: refNum,
+        comments: createComments(refNum)
+    }
+}
+
+function createComments(refNum){
+    var comments = [];
+    for(let i = 0; i < randNum(1, 5); i++){
+        comments.push({
+            dateCreated:randomDate(new Date(2012, 0, 1), new Date()),
+            author: randomSelect(authors),
+            company: randomSelect(companies),
+            comments: lorem,
+            serviceIssueNum: refNum
+        })
+    }
+    return comments;
 }
