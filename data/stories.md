@@ -25,3 +25,32 @@
     - action_store_destination
     - action_get_price_quote
     - action_clear_slots
+
+<!--- CAR -->
+
+<!-- status -->
+## car_status_request 1
+* car_status_request
+    - utter_ask_car_id
+* car_id_inform{"car_id": "SHMC6134"}
+    - action_get_car_status
+    - slot{"is_valid": true}
+
+## car_status_request 2
+* car_status_request
+    - utter_ask_car_id
+* car_id_inform{"car_id": "null"}
+    - action_get_car_status
+    - slot{"is_valid": false}
+    - utter_invalid
+
+## car_status_inform 1
+* car_status_inform{"car_id": "SHMC6134"}
+    - action_get_car_status
+    - slot{"is_valid": true}
+
+## car_status_inform 1
+* car_status_inform{"car_id": "null"}
+    - action_get_car_status
+    - slot{"is_valid": false}
+    - utter_invalid

@@ -600,6 +600,326 @@
           }
         ],
         "text": "from Atlanta, GA to New York, NY price quote"
+      },
+      {
+        "intent": "car_id_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "ANJU1234"
+          }
+        ],
+        "text": "ANJU1234"
+      },
+      {
+        "intent": "car_id_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "EOFI9283"
+          }
+        ],
+        "text": "EOFI9283"
+      },
+      {
+        "intent": "car_id_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "PDHA4758"
+          }
+        ],
+        "text": "PDHA4758"
+      },
+      {
+        "intent": "car_id_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "POFI2835"
+          }
+        ],
+        "text": "POFI2835"
+      },
+      {
+        "intent": "car_id_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "sjio9283"
+          }
+        ],
+        "text": "sjio9283"
+      },
+      {
+        "intent": "car_id_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "GOUY9374"
+          }
+        ],
+        "text": "GOUY9374"
+      },
+      {
+        "intent": "car_id_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "difj3847"
+          }
+        ],
+        "text": "difj3847"
+      },
+      {
+        "intent": "car_id_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "woif2389"
+          }
+        ],
+        "text": "woif2389"
+      },
+      {
+        "intent": "car_id_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "WIFJ2837"
+          }
+        ],
+        "text": "WIFJ2837"
+      },
+      {
+        "intent": "car_id_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "IJFN2822"
+          }
+        ],
+        "text": "IJFN2822"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "car status"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "car state"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "cart completed"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "train progress"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "car percent completed"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "train status"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "cart state"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "equipment progress"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "cart percent completed"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "train completed"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "equipment state"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "car progress"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "car status"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "equipment completed"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "car completed"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "train percent completed"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "cart status"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "cart progress"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "equipment percent completed"
+      },
+      {
+        "intent": "car_status_request",
+        "text": "train state"
+      },
+      {
+        "intent": "car_status_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "GOUY9374"
+          }
+        ],
+        "text": "GOUY9374 progress"
+      },
+      {
+        "intent": "car_status_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "PDHA4758"
+          }
+        ],
+        "text": "PDHA4758 status"
+      },
+      {
+        "intent": "car_status_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "wifj2847"
+          }
+        ],
+        "text": "wifj2847 status"
+      },
+      {
+        "intent": "car_status_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "ANJU1234"
+          }
+        ],
+        "text": "ANJU1234 progress"
+      },
+      {
+        "intent": "car_status_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "difj3847"
+          }
+        ],
+        "text": "difj3847 status"
+      },
+      {
+        "intent": "car_status_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "PDHA4758"
+          }
+        ],
+        "text": "PDHA4758 progress"
+      },
+      {
+        "intent": "car_status_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "GOUY9374"
+          }
+        ],
+        "text": "GOUY9374 status"
+      },
+      {
+        "intent": "car_status_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "difj3847"
+          }
+        ],
+        "text": "difj3847 progress"
+      },
+      {
+        "intent": "car_status_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "ANJU1234"
+          }
+        ],
+        "text": "ANJU1234 status"
+      },
+      {
+        "intent": "car_status_inform",
+        "entities": [
+          {
+            "end": 8,
+            "entity": "car_id",
+            "start": 0,
+            "value": "wifj2847"
+          }
+        ],
+        "text": "wifj2847 progress"
       }
     ],
     "regex_features": [],

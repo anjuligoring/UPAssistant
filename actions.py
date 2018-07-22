@@ -46,6 +46,21 @@ class ActionGetPriceQuote(Action):
         dispatcher.utter_message('Quote: ' + cost)
         return []
 
+class ActionGetCarStatus(Action):
+
+    def name(self):
+        return 'action_get_car_status'
+    
+    def run(self, dispatcher, tracker, domain):
+        # Verify Car ID
+        car_id = str(tracker.get_slot('car_id')).upper()
+        if car_id != 'SHMC6134':
+            return [SlotSet('is_valid', False)]
+        else:
+            status = data_retrieval.get_car_status()
+            dispatcher.utter_message('Progress: ' + status + ' completed')
+        return [SlotSet('is_valid', True)]
+
 class ActionClearSlots(Action):
 
     def name(self):

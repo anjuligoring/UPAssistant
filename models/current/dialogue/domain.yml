@@ -6,11 +6,14 @@ action_names:
 - utter_invalid
 - utter_ask_origin
 - utter_ask_destination
+- utter_ask_car_id
 - utter_lance_fritz
 - action_get_request
 - action_store_origin
 - action_store_destination
 - action_get_price_quote
+- action_get_car_status
+- action_clear_slots
 actions:
 - utter_default
 - utter_greet
@@ -18,11 +21,14 @@ actions:
 - utter_invalid
 - utter_ask_origin
 - utter_ask_destination
+- utter_ask_car_id
 - utter_lance_fritz
 - actions.ActionGetRequest
 - actions.ActionStoreOrigin
 - actions.ActionStoreDestination
 - actions.ActionGetPriceQuote
+- actions.ActionGetCarStatus
+- actions.ActionClearSlots
 config:
   store_entities_as_slots: true
 entities:
@@ -37,7 +43,9 @@ intents:
 - bye
 - location_inform
 - price_quote_request
-- price_quote_inform
+- car_id_inform
+- car_status_request
+- car_status_inform
 - lance_fritz_request
 slots:
   car_id:
@@ -59,8 +67,10 @@ slots:
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
+  utter_ask_car_id:
+  - text: What is the car id?
   utter_ask_destination:
-  - text: What is your destination (Omaha, NE)
+  - text: What is your destination? (Omaha, NE)
   utter_ask_origin:
   - text: What is your origin? (Omaha, NE)
   utter_bye:
