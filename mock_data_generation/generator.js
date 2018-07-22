@@ -6,11 +6,11 @@ var dbConnection = require('./database');
 var Promise = require('bluebird');
 
 app.get('/cars/:num', function(req, res){
-    res.send(massProduceThatShit(req.params.num));
+    res.send(makeAdaCars(req.params.num));
 });
 
 app.get('/index-cars/:num', async (req, res)=>{
-    var cars = massProduceThatShit(req.params.num);
+    var cars = makeAdaCars(req.params.num);
     let db = new dbConnection();
     db.insertCars(cars);
     res.send("SUCCESS");
@@ -58,7 +58,7 @@ function location(state, city){
 }
 var locations = [location('Spokane', 'WA'), location('Seattle', 'WA'), location('Portland', 'OR'), location('Sacramento', 'CA'), location('San Franciso', 'CA'), location('Sockton', 'CA'), location('Salt Lake City', 'UT'), location('Omaha', 'NE'), location('St. Louis', 'MO'), location('Kansas City', 'MO'), location('Dallas', 'TX'), location('El Paso', 'TX'), location('Carson City', 'NE'), location('Boise', 'ID')];
 
-function massProduceThatShit(num){
+function makeAdaCars(num){
     var cars = [];
     for(let i = 0; i < num; i++){
         cars.push(createCar());

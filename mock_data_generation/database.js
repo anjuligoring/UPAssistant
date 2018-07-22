@@ -155,6 +155,7 @@ function formatCars(rows, data){
             car.id = row.id;
             car.commodity = row.commodity;
             car.carType = row.carType;
+            car.empty = row.empty == 0?"false":"true";
             car.serviceIssue.referenceNumber = row.referenceNum;
             car.serviceIssue.status = row.status;
             car.eta = new Date(row.eta);
