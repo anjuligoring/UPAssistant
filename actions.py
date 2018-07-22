@@ -46,6 +46,14 @@ class ActionGetPriceQuote(Action):
         dispatcher.utter_message('Quote: ' + cost)
         return []
 
+class ActionGetCarInfo(Action):
+
+    def name(self):
+        return 'action_get_car_info'
+    
+    def run(self, dispatcher, tracker, domain):
+        return []
+
 class ActionGetCarStatus(Action):
 
     def name(self):
@@ -105,6 +113,21 @@ class ActionGetCarLastCompletedEvent(Action):
             last_completed_event = data_retrieval.get_car_last_completed_event()
             dispatcher.utter_message(last_completed_event)
         return [SlotSet('is_valid', True)]
+
+class ActionGetCarNextScheduledEvent(Action):
+
+    def name(self):
+        return 'action_get_car_next_scheduled_event'
+
+    def run(self, dispatcher, tracker, domain):
+        # Verify Car ID
+        car_id = str(tracker.get_slot('car_id')).upper()
+        if car_id != 'SHMC6134':
+            return [SlotSet('is_valid', False)]
+        else:
+            next_scheduled_event = data_retrieval.get_car_next_scheduled_event()
+            dispatcher.utter_message(next_scheduled_event)
+        return [SlotSet('isValid', True)]
 
 class ActionClearSlots(Action):
 

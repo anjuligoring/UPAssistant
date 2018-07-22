@@ -1375,7 +1375,7 @@
 				]
 			},
 			{
-				"text": "train last completed event",
+				"text": "last completed event",
 				"intent": "car_last_completed_event_request",
 				"entities": []
 			},
@@ -1400,6 +1400,11 @@
 				"entities": []
 			},
 			{
+				"text": "last completed event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
 				"text": "cart last completed event",
 				"intent": "car_last_completed_event_request",
 				"entities": []
@@ -1410,12 +1415,12 @@
 				"entities": []
 			},
 			{
-				"text": "train recently finished event",
+				"text": "recently finished event",
 				"intent": "car_last_completed_event_request",
 				"entities": []
 			},
 			{
-				"text": "equipment last event",
+				"text": "last event",
 				"intent": "car_last_completed_event_request",
 				"entities": []
 			},
@@ -1450,122 +1455,572 @@
 				"entities": []
 			},
 			{
-				"text": "jofe3580 last completed event",
+				"text": "previous event",
+				"intent": "car_last_completed_event_request",
+				"entities": []
+			},
+			{
+				"text": "ABCD1234 prior event",
 				"intent": "car_last_completed_event_inform",
 				"entities": [
 					{
 						"end": 8,
 						"entity": "car_id",
 						"start": 0,
-						"value": "jofe3580"
+						"value": "ABCD1234"
 					}
 				]
 			},
 			{
-				"text": "JIOF9485 last event",
+				"text": "omdv0298 last completed event",
 				"intent": "car_last_completed_event_inform",
 				"entities": [
 					{
 						"end": 8,
 						"entity": "car_id",
 						"start": 0,
-						"value": "JIOF9485"
+						"value": "omdv0298"
 					}
 				]
 			},
 			{
-				"text": "IEJF9283 recently finished event",
+				"text": "WILL0521 previous event",
 				"intent": "car_last_completed_event_inform",
 				"entities": [
 					{
 						"end": 8,
 						"entity": "car_id",
 						"start": 0,
-						"value": "IEJF9283"
+						"value": "WILL0521"
 					}
 				]
 			},
 			{
-				"text": "afjo2082 previous event",
+				"text": "UWTY8973 preceding event",
 				"intent": "car_last_completed_event_inform",
 				"entities": [
 					{
 						"end": 8,
 						"entity": "car_id",
 						"start": 0,
-						"value": "afjo2082"
+						"value": "UWTY8973"
 					}
 				]
 			},
 			{
-				"text": "OPRJ5470 last event",
+				"text": "WKEJ2092 recently finished event",
 				"intent": "car_last_completed_event_inform",
 				"entities": [
 					{
 						"end": 8,
 						"entity": "car_id",
 						"start": 0,
-						"value": "OPRJ5470"
+						"value": "WKEJ2092"
 					}
 				]
 			},
 			{
-				"text": "afsd0382 recently finished event",
+				"text": "ksbn2093 before event",
 				"intent": "car_last_completed_event_inform",
 				"entities": [
 					{
 						"end": 8,
 						"entity": "car_id",
 						"start": 0,
-						"value": "afsd0382"
+						"value": "ksbn2093"
 					}
 				]
 			},
 			{
-				"text": "FEHI3498 previous event",
+				"text": "kjwe3867 antecedent event",
 				"intent": "car_last_completed_event_inform",
 				"entities": [
 					{
 						"end": 8,
 						"entity": "car_id",
 						"start": 0,
-						"value": "FEHI3498"
+						"value": "kjwe3867"
 					}
 				]
 			},
 			{
-				"text": "OPRJ5470 last completed event",
+				"text": "omdv0298 prior event",
 				"intent": "car_last_completed_event_inform",
 				"entities": [
 					{
 						"end": 8,
 						"entity": "car_id",
 						"start": 0,
-						"value": "OPRJ5470"
+						"value": "omdv0298"
 					}
 				]
 			},
 			{
-				"text": "jofe3580 last event",
+				"text": "WKEJ2092 preceding event",
 				"intent": "car_last_completed_event_inform",
 				"entities": [
 					{
 						"end": 8,
 						"entity": "car_id",
 						"start": 0,
-						"value": "jofe3580"
+						"value": "WKEJ2092"
 					}
 				]
 			},
 			{
-				"text": "FEHI3498 last completed event",
+				"text": "UWTY8973 recently finished event",
 				"intent": "car_last_completed_event_inform",
 				"entities": [
 					{
 						"end": 8,
 						"entity": "car_id",
 						"start": 0,
-						"value": "FEHI3498"
+						"value": "UWTY8973"
+					}
+				]
+			},
+			{
+				"text": "WILL0521 before event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "WILL0521"
+					}
+				]
+			},
+			{
+				"text": "ksbn2093 last completed event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "ksbn2093"
+					}
+				]
+			},
+			{
+				"text": "ABCD1234 previous event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "ABCD1234"
+					}
+				]
+			},
+			{
+				"text": "kjwe3867 previous event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "kjwe3867"
+					}
+				]
+			},
+			{
+				"text": "ABCD1234 preceding event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "ABCD1234"
+					}
+				]
+			},
+			{
+				"text": "UWTY8973 antecedent event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "UWTY8973"
+					}
+				]
+			},
+			{
+				"text": "WILL0521 last completed event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "WILL0521"
+					}
+				]
+			},
+			{
+				"text": "omdv0298 before event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "omdv0298"
+					}
+				]
+			},
+			{
+				"text": "ksbn2093 prior event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "ksbn2093"
+					}
+				]
+			},
+			{
+				"text": "ABCD1234 before event",
+				"intent": "car_last_completed_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "ABCD1234"
+					}
+				]
+			},
+			{
+				"text": "car next event",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "train next scheduled event",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "car next scheduled event",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "upcoming event",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "equipment event coming up",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "cart next scheduled event",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "train upcoming event",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "cart event coming up",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "next event",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "equipment next scheduled event",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "car upcoming event",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "car event coming up",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "train event coming up",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "equipment upcoming event",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "equipment next event",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "event coming up",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "next scheduled event",
+				"intent": "car_next_scheduled_event_request",
+				"entities": []
+			},
+			{
+				"text": "WPIO2094 upcoming event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "WPIO2094"
+					}
+				]
+			},
+			{
+				"text": "kwjb0293 imminent event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "kwjb0293"
+					}
+				]
+			},
+			{
+				"text": "ioud5784 next scheduled event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "ioud5784"
+					}
+				]
+			},
+			{
+				"text": "poqu7654 following event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "poqu7654"
+					}
+				]
+			},
+			{
+				"text": "IUDK8933 next event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "IUDK8933"
+					}
+				]
+			},
+			{
+				"text": "oiuw2340 future event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "oiuw2340"
+					}
+				]
+			},
+			{
+				"text": "JWHE2392 succeeding event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "JWHE2392"
+					}
+				]
+			},
+			{
+				"text": "kwjb0293 coming up event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "kwjb0293"
+					}
+				]
+			},
+			{
+				"text": "WPIO2094 imminent event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "WPIO2094"
+					}
+				]
+			},
+			{
+				"text": "poqu7654 succeeding event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "poqu7654"
+					}
+				]
+			},
+			{
+				"text": "IUDK8933 upcoming event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "IUDK8933"
+					}
+				]
+			},
+			{
+				"text": "ioud5784 following event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "ioud5784"
+					}
+				]
+			},
+			{
+				"text": "JWHE2392 next event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "JWHE2392"
+					}
+				]
+			},
+			{
+				"text": "WPIO2094 next scheduled event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "WPIO2094"
+					}
+				]
+			},
+			{
+				"text": "poqu7654 coming up event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "poqu7654"
+					}
+				]
+			},
+			{
+				"text": "ioud5784 succeeding event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "ioud5784"
+					}
+				]
+			},
+			{
+				"text": "JWHE2392 upcoming event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "JWHE2392"
+					}
+				]
+			},
+			{
+				"text": "IUDK8933 next scheduled event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "IUDK8933"
+					}
+				]
+			},
+			{
+				"text": "oiuw2340 following event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "oiuw2340"
+					}
+				]
+			},
+			{
+				"text": "poqu7654 future event",
+				"intent": "car_next_scheduled_event_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "poqu7654"
 					}
 				]
 			}

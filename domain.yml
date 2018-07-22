@@ -5,6 +5,8 @@ intents:
   - location_inform
   - price_quote_request
   - car_id_inform
+  - car_info_request
+  - car_info_inform
   - car_status_request
   - car_status_inform
   - car_eta_request
@@ -13,6 +15,8 @@ intents:
   - car_service_issues_inform
   - car_last_completed_event_request
   - car_last_completed_event_inform
+  - car_next_scheduled_event_request
+  - car_next_scheduled_event_inform
   - lance_fritz_request
 
 entities:
@@ -77,8 +81,10 @@ actions:
   - actions.ActionStoreOrigin
   - actions.ActionStoreDestination
   - actions.ActionGetPriceQuote
+  - actions.ActionGetCarInfo
   - actions.ActionGetCarStatus
   - actions.ActionGetCarETA
   - actions.ActionGetCarServiceIssues
   - actions.ActionGetCarLastCompletedEvent
+  - actions.ActionGetCarNextScheduledEvent
   - actions.ActionClearSlots

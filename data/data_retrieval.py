@@ -135,6 +135,11 @@ def get_data():
     data = json.loads(json_data)
     return data
 
+def get_car_info():
+    data = get_data()
+
+    
+
 def get_car_status():
     data = get_data()
 
@@ -230,3 +235,40 @@ def get_car_last_completed_event():
     last_event_time = date + " @ " + time
 
     return 'The last completed event was \"' + last_completed_event['name'] + '\", which occured on ' + last_event_time + '.'
+
+def get_car_next_scheduled_event():
+    data = get_data()
+    next_scheduled_event = data['scheduledEvents'][0]
+    eta = next_scheduled_event['dateTime']
+
+    year = eta[:4]
+    month = eta[5:7]
+    day = eta[8:10]
+    hour = (int)(eta[11:13]) % 12
+    min = eta[14:16]
+    if (int)(eta[11:13]) > 12:
+        ampm = "pm"
+    else:
+        ampm = "am"
+
+    switcher = {
+        '01': 'January',
+        '02': 'February',
+        '03': 'March',
+        '04': 'April',
+        '05': 'May',
+        '06': 'June',
+        '07': 'July',
+        '08': 'August',
+        '09': 'September',
+        '10': 'October',
+        '11': 'November',
+        '12': 'December'
+    }
+    month = switcher.get(month, 'Invalid Month')
+    date = month + " " + day + ", " + year
+    time = (str)(hour) + ":" + min + " " + ampm
+    next_event_time = date + " @ " + time
+    location = next_scheduled_event['location']['city'] + ", " + next_scheduled_event['location']['state']
+
+    return 'The next scheduled event is \"' + next_scheduled_event['name'] + '\", from ' + location + ' at ' + next_event_time + '.'

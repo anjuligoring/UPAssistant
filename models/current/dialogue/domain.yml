@@ -16,6 +16,7 @@ action_names:
 - action_get_car_eta
 - action_get_car_service_issues
 - action_get_car_last_completed_event
+- action_get_car_next_scheduled_event
 - action_clear_slots
 actions:
 - utter_default
@@ -34,6 +35,7 @@ actions:
 - actions.ActionGetCarETA
 - actions.ActionGetCarServiceIssues
 - actions.ActionGetCarLastCompletedEvent
+- actions.ActionGetCarNextScheduledEvent
 - actions.ActionClearSlots
 config:
   store_entities_as_slots: true
@@ -58,6 +60,8 @@ intents:
 - car_service_issues_inform
 - car_last_completed_event_request
 - car_last_completed_event_inform
+- car_next_scheduled_event_request
+- car_next_scheduled_event_inform
 - lance_fritz_request
 slots:
   car_id:

@@ -132,8 +132,35 @@
     - action_get_car_last_completed_event
     - slot{"is_valid": true}
 
-## car_last_completed_event_inform 1
+## car_last_completed_event_inform 2
 * car_last_completed_event_inform{"car_id": "null"}
     - action_get_car_last_completed_event
+    - slot{"is_valid": false}
+    - utter_invalid
+
+<!-- next scheduled event -->
+## car_next_scheduled_event_request 1
+* car_next_scheduled_event_request
+    - utter_ask_car_id
+* car_id_inform{"car_id": "SHMC6134"}
+    - action_get_car_next_scheduled_event
+    - slot{"is_valid": true}
+
+## car_next_scheduled_event_request 2
+* car_next_scheduled_event_request
+    - utter_ask_car_id
+* car_id_inform{"car_id": "null"}
+    - action_get_car_next_scheduled_event
+    - slot{"is_valid": false}
+    - utter_invalid
+
+## car_next_scheduled_event_inform 1
+* car_next_scheduled_event_inform{"car_id": "SHMC6134"}
+    - action_get_car_next_scheduled_event
+    - slot{"is_valid": true}
+
+## car_next_scheduled_event_inform 2
+* car_next_scheduled_event_inform{"car_id": "null"}
+    - action_get_car_next_scheduled_event
     - slot{"is_valid": false}
     - utter_invalid
