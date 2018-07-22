@@ -40,6 +40,7 @@
     "prev_utter_ask_origin",
     "prev_utter_ask_destination",
     "prev_utter_ask_car_id",
+    "prev_utter_car_specifics",
     "prev_utter_lance_fritz",
     "prev_action_get_request",
     "prev_action_store_origin",

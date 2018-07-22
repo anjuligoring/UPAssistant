@@ -45,6 +45,7 @@
 * car_id_inform{"car_id": "SHMC6134"}
     - action_get_car_info
     - slot{"is_valid": true}
+    - utter_car_specifics
 
 ## car_info_request 2
 * car_info_request
@@ -58,6 +59,7 @@
 * car_info_inform{"car_id": "SHMC6134"}
     - action_get_car_info
     - slot{"is_valid": true}
+    - utter_car_specifics
 
 ## car_info_inform 2
 * car_info_inform{"car_id": null}
@@ -72,6 +74,7 @@
 * car_id_inform{"car_id": "SHMC6134"}
     - action_get_car_status
     - slot{"is_valid": true}
+    - utter_car_specifics
 
 ## car_status_request 2
 * car_status_request
@@ -85,6 +88,7 @@
 * car_status_inform{"car_id": "SHMC6134"}
     - action_get_car_status
     - slot{"is_valid": true}
+    - utter_car_specifics
 
 ## car_status_inform 1
 * car_status_inform{"car_id": "null"}
@@ -99,6 +103,7 @@
 * car_id_inform{"car_id": "SHMC6134"}
     - action_get_car_eta
     - slot{"is_valid": true}
+    - utter_car_specifics
 
 ## car_eta_request 2
 * car_eta_request
@@ -112,6 +117,7 @@
 * car_eta_inform{"car_id": "SHMC6134"}
     - action_get_car_eta
     - slot{"is_valid": true}
+    - utter_car_specifics
 
 ## car_eta_inform 2
 * car_eta_inform{"car_id": "null"}
@@ -126,6 +132,7 @@
 * car_id_inform{"car_id": "SHMC6134"}
     - action_get_car_service_issues
     - slot{"is_valid": true}
+    - utter_car_specifics
 
 ## car_service_issues_request 2
 * car_service_issues_request
@@ -139,6 +146,7 @@
 * car_service_issues_inform{"car_id": "SHMC6134"}
     - action_get_car_service_issues
     - slot{"is_valid": true}
+    - utter_car_specifics
 
 ## car_service_issues_inform 2
 * car_service_issues_inform{"car_id": "null"}
@@ -153,6 +161,7 @@
 * car_id_inform{"car_id": "SHMC6134"}
     - action_get_car_last_completed_event
     - slot{"is_valid": true}
+    - utter_car_specifics
 
 ## car_last_completed_event_request 2
 * car_last_completed_event_request
@@ -166,6 +175,7 @@
 * car_last_completed_event_inform{"car_id": "SHMC6134"}
     - action_get_car_last_completed_event
     - slot{"is_valid": true}
+    - utter_car_specifics
 
 ## car_last_completed_event_inform 2
 * car_last_completed_event_inform{"car_id": "null"}
@@ -180,6 +190,7 @@
 * car_id_inform{"car_id": "SHMC6134"}
     - action_get_car_next_scheduled_event
     - slot{"is_valid": true}
+    - utter_car_specifics
 
 ## car_next_scheduled_event_request 2
 * car_next_scheduled_event_request
@@ -187,15 +198,16 @@
 * car_id_inform{"car_id": "null"}
     - action_get_car_next_scheduled_event
     - slot{"is_valid": false}
-    <!-- - utter_invalid -->
+    - utter_invalid
 
 ## car_next_scheduled_event_inform 1
 * car_next_scheduled_event_inform{"car_id": "SHMC6134"}
     - action_get_car_next_scheduled_event
     - slot{"is_valid": true}
+    - utter_car_specifics
 
 ## car_next_scheduled_event_inform 2
 * car_next_scheduled_event_inform{"car_id": "null"}
     - action_get_car_next_scheduled_event
     - slot{"is_valid": false}
-    <!-- - utter_invalid -->
+    - utter_invalid

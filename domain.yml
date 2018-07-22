@@ -68,13 +68,15 @@ templates:
     - text: "Car Specifics"
       buttons:
         - title: "Status"
-          payload: "car status"
+          payload: "{car_id} status"
+        - title: "ETA"
+          payload: "{car_id} eta"
         - title: "Description"
-          payload: "car description"
+          payload: "{car_id} description"
         - title: "Last Completed Event"
-          payload: "car last completed event"
+          payload: "{car_id} last completed event"
         - title: "Next Scheduled Event"
-          payload: "car next scheduled event"
+          payload: "{car_id} next scheduled event"
   utter_lance_fritz:
   - text: "You're welcome."
     image: "https://www.up.com/cs/groups/public/@uprr/@corprel/documents/digitalmedia/img_up_exec-lance-fritz.jpg"
@@ -87,6 +89,7 @@ actions:
   - utter_ask_origin
   - utter_ask_destination
   - utter_ask_car_id
+  - utter_car_specifics
   - utter_lance_fritz
   - actions.ActionGetRequest
   - actions.ActionStoreOrigin

@@ -7,6 +7,7 @@ action_names:
 - utter_ask_origin
 - utter_ask_destination
 - utter_ask_car_id
+- utter_car_specifics
 - utter_lance_fritz
 - action_get_request
 - action_store_origin
@@ -27,6 +28,7 @@ actions:
 - utter_ask_origin
 - utter_ask_destination
 - utter_ask_car_id
+- utter_car_specifics
 - utter_lance_fritz
 - actions.ActionGetRequest
 - actions.ActionStoreOrigin
@@ -97,6 +99,19 @@ templates:
   - text: Bye!
   - text: Cya!
   - text: Goodbye!
+  utter_car_specifics:
+  - buttons:
+    - payload: '{car_id} status'
+      title: Status
+    - payload: '{car_id} eta'
+      title: ETA
+    - payload: '{car_id} description'
+      title: Description
+    - payload: '{car_id} last completed event'
+      title: Last Completed Event
+    - payload: '{car_id} next scheduled event'
+      title: Next Scheduled Event
+    text: Car Specifics
   utter_default:
   - text: Can you rephrase that?
   - text: I didn't understand that.

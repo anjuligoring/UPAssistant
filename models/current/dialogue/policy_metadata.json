@@ -2,17 +2,12 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "request",
         "car_id",
+        "request",
         "location"
       ]
     },
-    "action_get_car_status": {
-      "slots": [
-        "is_valid"
-      ]
-    },
-    "utter_invalid": {
+    "utter_lance_fritz": {
       "slots": []
     },
     "action_get_car_next_scheduled_event": {
@@ -20,15 +15,8 @@
         "is_valid"
       ]
     },
-    "action_get_car_eta": {
-      "slots": [
-        "is_valid"
-      ]
-    },
-    "action_get_car_info": {
-      "slots": [
-        "is_valid"
-      ]
+    "utter_car_specifics": {
+      "slots": []
     },
     "action_get_car_service_issues": {
       "slots": [
@@ -40,19 +28,34 @@
         "is_valid"
       ]
     },
-    "utter_bye": {
+    "utter_invalid": {
+      "slots": []
+    },
+    "action_get_car_eta": {
+      "slots": [
+        "is_valid"
+      ]
+    },
+    "action_get_car_info": {
+      "slots": [
+        "is_valid"
+      ]
+    },
+    "action_get_car_status": {
+      "slots": [
+        "is_valid"
+      ]
+    },
+    "action_clear_slots": {
       "slots": []
     },
     "utter_greet": {
       "slots": []
     },
+    "utter_bye": {
+      "slots": []
+    },
     "action_get_request": {
-      "slots": []
-    },
-    "utter_lance_fritz": {
-      "slots": []
-    },
-    "action_clear_slots": {
       "slots": []
     }
   },
