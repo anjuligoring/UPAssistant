@@ -2,16 +2,25 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "request"
+        "request",
+        "destination",
+        "location",
+        "origin"
       ]
     },
     "utter_bye": {
       "slots": []
     },
-    "action_get_request": {
+    "action_get_price_quote": {
       "slots": []
     },
     "utter_greet": {
+      "slots": []
+    },
+    "action_get_request": {
+      "slots": []
+    },
+    "utter_lance_fritz": {
       "slots": []
     }
   },
