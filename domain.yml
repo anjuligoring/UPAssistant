@@ -78,8 +78,8 @@ templates:
         - title: "Next Scheduled Event"
           payload: "{car_id} next scheduled event"
   utter_lance_fritz:
-  - text: "You're welcome."
-    image: "https://www.up.com/cs/groups/public/@uprr/@corprel/documents/digitalmedia/img_up_exec-lance-fritz.jpg"
+  - text: "You're welcome. - Will B."
+    image: "https://media.discordapp.net/attachments/470448093112827914/470454563409756170/image.jpg"
 
 actions:
   - utter_default
@@ -95,6 +95,7 @@ actions:
   - actions.ActionStoreOrigin
   - actions.ActionStoreDestination
   - actions.ActionGetPriceQuote
+  - actions.ActionIsCar
   - actions.ActionGetCarInfo
   - actions.ActionGetCarStatus
   - actions.ActionGetCarETA

@@ -46,6 +46,18 @@ class ActionGetPriceQuote(Action):
         dispatcher.utter_message('Quote: ' + cost)
         return []
 
+class ActionIsCar(Action):
+
+    def name(self):
+        return 'action_is_car'
+    
+    def run(self, dispatcher, tracker, domain):
+        car_id = str(tracker.get_slot('car_id')).upper()
+        if (data_retrieval.is_car(car_id)) is False:
+            return [SlotSet('is_valid', False)]
+        else:
+            return [SlotSet('is_valid', True)]
+
 class ActionGetCarInfo(Action):
 
     def name(self):

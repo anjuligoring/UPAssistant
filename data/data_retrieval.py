@@ -106,6 +106,10 @@ def get_car_service_issues(car_id):
 def get_car_last_completed_event(car_id):
     data = get_data(car_id)
     last_completed_event = data['completedEvents'][0]
+
+    if len(last_completed_event) is 0:
+        return 'No events have been completed.'
+
     eta = last_completed_event['dateTime']
 
     year = eta[:4]
@@ -143,6 +147,10 @@ def get_car_last_completed_event(car_id):
 def get_car_next_scheduled_event(car_id):
     data = get_data(car_id)
     next_scheduled_event = data['scheduledEvents'][0]
+
+    if len(next_scheduled_event) is 0:
+        return 'No more events are scheduled. You\'ve reached your destination!'
+
     eta = next_scheduled_event['dateTime']
 
     year = eta[:4]

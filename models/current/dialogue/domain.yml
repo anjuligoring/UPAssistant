@@ -13,6 +13,7 @@ action_names:
 - action_store_origin
 - action_store_destination
 - action_get_price_quote
+- action_is_car
 - action_get_car_info
 - action_get_car_status
 - action_get_car_eta
@@ -34,6 +35,7 @@ actions:
 - actions.ActionStoreOrigin
 - actions.ActionStoreDestination
 - actions.ActionGetPriceQuote
+- actions.ActionIsCar
 - actions.ActionGetCarInfo
 - actions.ActionGetCarStatus
 - actions.ActionGetCarETA
@@ -126,5 +128,5 @@ templates:
   - text: Yea...NO. Try again.
   - text: Nice try, but that's invalid.
   utter_lance_fritz:
-  - image: https://www.up.com/cs/groups/public/@uprr/@corprel/documents/digitalmedia/img_up_exec-lance-fritz.jpg
-    text: You're welcome.
+  - image: https://media.discordapp.net/attachments/470448093112827914/470454563409756170/image.jpg
+    text: You're welcome. - Will B.

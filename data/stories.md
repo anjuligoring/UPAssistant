@@ -33,7 +33,15 @@
 <!-- specifics -->
 ## car specifics 1
 * car_id_inform{"car_id": "ANJU2449"}
+    - action_is_car
+    - slot{"is_valid": true}
     - utter_car_specifics
+
+## car specifics 2
+* car_id_inform{"car_id": "null"}
+    - action_is_car
+    - slot{"is_valid": false}
+    - utter_invalid
 
 <!-- info -->
 ## car_info_request 1
@@ -47,7 +55,7 @@
 ## car_info_request 2
 * car_info_request
     - utter_ask_car_id
-* car_id_inform{"car_id": null}
+* car_id_inform{"car_id": "null"}
     - action_get_car_info
     - slot{"is_valid": false}
     - utter_invalid
@@ -59,7 +67,7 @@
     - utter_car_specifics
 
 ## car_info_inform 2
-* car_info_inform{"car_id": null}
+* car_info_inform{"car_id": "null"}
     - action_get_car_info
     - slot{"is_valid": false}
     - utter_invalid
