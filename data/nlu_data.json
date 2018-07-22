@@ -973,6 +973,236 @@
 						"value": "wifj2847"
 					}
 				]
+			},
+			{
+				"text": "equipment arrival time",
+				"intent": "car_eta_request",
+				"entities": []
+			},
+			{
+				"text": "car estimated time of arrival",
+				"intent": "car_eta_request",
+				"entities": []
+			},
+			{
+				"text": "train eta",
+				"intent": "car_eta_request",
+				"entities": []
+			},
+			{
+				"text": "cart arrival time",
+				"intent": "car_eta_request",
+				"entities": []
+			},
+			{
+				"text": "equipment eta",
+				"intent": "car_eta_request",
+				"entities": []
+			},
+			{
+				"text": "cart estimated time of arrival",
+				"intent": "car_eta_request",
+				"entities": []
+			},
+			{
+				"text": "train estimated time of arrival",
+				"intent": "car_eta_request",
+				"entities": []
+			},
+			{
+				"text": "car eta",
+				"intent": "car_eta_request",
+				"entities": []
+			},
+			{
+				"text": "train arrival time",
+				"intent": "car_eta_request",
+				"entities": []
+			},
+			{
+				"text": "equipment estimated time of arrival",
+				"intent": "car_eta_request",
+				"entities": []
+			},
+			{
+				"text": "afjo2082 estimated time of arrival",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "afjo2082"
+					}
+				]
+			},
+			{
+				"text": "IEJF9283 arrival time",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "IEJF9283"
+					}
+				]
+			},
+			{
+				"text": "jofe3580 eta",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "jofe3580"
+					}
+				]
+			},
+			{
+				"text": "afsd0382 estimated time of arrival",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "afsd0382"
+					}
+				]
+			},
+			{
+				"text": "OPRJ5470 eta",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "OPRJ5470"
+					}
+				]
+			},
+			{
+				"text": "FEHI3498 arrival time",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "FEHI3498"
+					}
+				]
+			},
+			{
+				"text": "JIOF9485 arrival time",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "JIOF9485"
+					}
+				]
+			},
+			{
+				"text": "FEHI3498 eta",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "FEHI3498"
+					}
+				]
+			},
+			{
+				"text": "IEJF9283 estimated time of arrival",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "IEJF9283"
+					}
+				]
+			},
+			{
+				"text": "afjo2082 eta",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "afjo2082"
+					}
+				]
+			},
+			{
+				"text": "jofe3580 arrival time",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "jofe3580"
+					}
+				]
+			},
+			{
+				"text": "OPRJ5470 arrival time",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "OPRJ5470"
+					}
+				]
+			},
+			{
+				"text": "JIOF9485 estimated time of arrival",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "JIOF9485"
+					}
+				]
+			},
+			{
+				"text": "JIOF9485 eta",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "JIOF9485"
+					}
+				]
+			},
+			{
+				"text": "afsd0382 arrival time",
+				"intent": "car_eta_inform",
+				"entities": [
+					{
+						"end": 8,
+						"entity": "car_id",
+						"start": 0,
+						"value": "afsd0382"
+					}
+				]
 			}
 		]
 	}

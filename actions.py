@@ -61,6 +61,21 @@ class ActionGetCarStatus(Action):
             dispatcher.utter_message('Progress: ' + status + ' completed')
         return [SlotSet('is_valid', True)]
 
+class ActionGetCarETA(Action):
+
+    def name(self):
+        return 'action_get_car_eta'
+    
+    def run(self, dispatcher, tracker, domain):
+        # Verify Car ID
+        car_id = str(tracker.get_slot('car_id')).upper()
+        if car_id != 'SHMC6134':
+            return [SlotSet('is_valid', False)]
+        else:
+            eta = data_retrieval.get_car_eta()
+            dispatcher.utter_message('ETA: ' + eta)
+        return [SlotSet('is_valid', True)]
+
 class ActionClearSlots(Action):
 
     def name(self):

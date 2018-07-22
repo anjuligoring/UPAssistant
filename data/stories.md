@@ -54,3 +54,30 @@
     - action_get_car_status
     - slot{"is_valid": false}
     - utter_invalid
+
+<!-- eta -->
+## car_eta_request 1
+* car_eta_request
+    - utter_ask_car_id
+* car_id_inform{"car_id": "SHMC6134"}
+    - action_get_car_eta
+    - slot{"is_valid": true}
+
+## car_eta_request 2
+* car_eta_request
+    - utter_ask_car_id
+* car_id_inform{"car_id": "null"}
+    - action_get_car_eta
+    - slot{"is_valid": false}
+    - utter_invalid
+
+## car_eta_inform 1
+* car_eta_inform{"car_id": "SHMC6134"}
+    - action_get_car_eta
+    - slot{"is_valid": true}
+
+## car_eta_inform 2
+* car_eta_inform{"car_id": "null"}
+    - action_get_car_eta
+    - slot{"is_valid": false}
+    - utter_invalid

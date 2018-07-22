@@ -7,6 +7,10 @@ intents:
   - car_id_inform
   - car_status_request
   - car_status_inform
+  - car_eta_request
+  - car_eta_inform
+  - car_service_issue_request
+  - car_service_issue_inform
   - lance_fritz_request
 
 entities:
@@ -72,4 +76,5 @@ actions:
   - actions.ActionStoreDestination
   - actions.ActionGetPriceQuote
   - actions.ActionGetCarStatus
+  - actions.ActionGetCarETA
   - actions.ActionClearSlots
