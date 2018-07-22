@@ -7,23 +7,7 @@
         "location"
       ]
     },
-    "utter_lance_fritz": {
-      "slots": []
-    },
-    "action_get_car_next_scheduled_event": {
-      "slots": [
-        "is_valid"
-      ]
-    },
-    "utter_car_specifics": {
-      "slots": []
-    },
-    "action_get_car_service_issues": {
-      "slots": [
-        "is_valid"
-      ]
-    },
-    "action_get_car_last_completed_event": {
+    "action_get_car_info": {
       "slots": [
         "is_valid"
       ]
@@ -31,12 +15,7 @@
     "utter_invalid": {
       "slots": []
     },
-    "action_get_car_eta": {
-      "slots": [
-        "is_valid"
-      ]
-    },
-    "action_get_car_info": {
+    "action_get_car_service_issues": {
       "slots": [
         "is_valid"
       ]
@@ -46,16 +25,37 @@
         "is_valid"
       ]
     },
-    "action_clear_slots": {
+    "utter_car_specifics": {
       "slots": []
     },
     "utter_greet": {
       "slots": []
     },
+    "action_get_request": {
+      "slots": []
+    },
+    "action_get_car_last_completed_event": {
+      "slots": [
+        "is_valid"
+      ]
+    },
+    "action_get_car_next_scheduled_event": {
+      "slots": [
+        "is_valid"
+      ]
+    },
     "utter_bye": {
       "slots": []
     },
-    "action_get_request": {
+    "action_get_car_eta": {
+      "slots": [
+        "is_valid"
+      ]
+    },
+    "action_clear_slots": {
+      "slots": []
+    },
+    "utter_lance_fritz": {
       "slots": []
     }
   },

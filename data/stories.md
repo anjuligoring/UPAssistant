@@ -30,19 +30,16 @@
 
 <!--- CAR -->
 
+<!-- specifics -->
 ## car specifics 1
-* car_id_inform{"car_id": "SHMC6134"}
+* car_id_inform{"car_id": "ANJU2449"}
     - utter_car_specifics
-
-## car specifics 2
-* car_id_inform{"car_id": null}
-    - utter_invalid
 
 <!-- info -->
 ## car_info_request 1
 * car_info_request
     - utter_ask_car_id
-* car_id_inform{"car_id": "SHMC6134"}
+* car_id_inform{"car_id": "ANJU2449"}
     - action_get_car_info
     - slot{"is_valid": true}
     - utter_car_specifics
@@ -56,7 +53,7 @@
     - utter_invalid
 
 ## car_info_inform 1
-* car_info_inform{"car_id": "SHMC6134"}
+* car_info_inform{"car_id": "ANJU2449"}
     - action_get_car_info
     - slot{"is_valid": true}
     - utter_car_specifics
@@ -71,7 +68,7 @@
 ## car_status_request 1
 * car_status_request
     - utter_ask_car_id
-* car_id_inform{"car_id": "SHMC6134"}
+* car_id_inform{"car_id": "ANJU2449"}
     - action_get_car_status
     - slot{"is_valid": true}
     - utter_car_specifics
@@ -85,7 +82,7 @@
     - utter_invalid
 
 ## car_status_inform 1
-* car_status_inform{"car_id": "SHMC6134"}
+* car_status_inform{"car_id": "ANJU2449"}
     - action_get_car_status
     - slot{"is_valid": true}
     - utter_car_specifics
@@ -100,7 +97,7 @@
 ## car_eta_request 1
 * car_eta_request
     - utter_ask_car_id
-* car_id_inform{"car_id": "SHMC6134"}
+* car_id_inform{"car_id": "ANJU2449"}
     - action_get_car_eta
     - slot{"is_valid": true}
     - utter_car_specifics
@@ -114,7 +111,7 @@
     - utter_invalid
 
 ## car_eta_inform 1
-* car_eta_inform{"car_id": "SHMC6134"}
+* car_eta_inform{"car_id": "ANJU2449"}
     - action_get_car_eta
     - slot{"is_valid": true}
     - utter_car_specifics
@@ -129,7 +126,7 @@
 ## car_service_issues_request 1
 * car_service_issues_request
     - utter_ask_car_id
-* car_id_inform{"car_id": "SHMC6134"}
+* car_id_inform{"car_id": "ANJU2449"}
     - action_get_car_service_issues
     - slot{"is_valid": true}
     - utter_car_specifics
@@ -143,7 +140,7 @@
     - utter_invalid
 
 ## car_service_issues_inform 1
-* car_service_issues_inform{"car_id": "SHMC6134"}
+* car_service_issues_inform{"car_id": "ANJU2449"}
     - action_get_car_service_issues
     - slot{"is_valid": true}
     - utter_car_specifics
@@ -158,7 +155,7 @@
 ## car_last_completed_event_request 1
 * car_last_completed_event_request
     - utter_ask_car_id
-* car_id_inform{"car_id": "SHMC6134"}
+* car_id_inform{"car_id": "ANJU2449"}
     - action_get_car_last_completed_event
     - slot{"is_valid": true}
     - utter_car_specifics
@@ -172,7 +169,7 @@
     - utter_invalid
 
 ## car_last_completed_event_inform 1
-* car_last_completed_event_inform{"car_id": "SHMC6134"}
+* car_last_completed_event_inform{"car_id": "ANJU2449"}
     - action_get_car_last_completed_event
     - slot{"is_valid": true}
     - utter_car_specifics
@@ -187,7 +184,7 @@
 ## car_next_scheduled_event_request 1
 * car_next_scheduled_event_request
     - utter_ask_car_id
-* car_id_inform{"car_id": "SHMC6134"}
+* car_id_inform{"car_id": "ANJU2449"}
     - action_get_car_next_scheduled_event
     - slot{"is_valid": true}
     - utter_car_specifics
@@ -201,7 +198,7 @@
     - utter_invalid
 
 ## car_next_scheduled_event_inform 1
-* car_next_scheduled_event_inform{"car_id": "SHMC6134"}
+* car_next_scheduled_event_inform{"car_id": "ANJU2449"}
     - action_get_car_next_scheduled_event
     - slot{"is_valid": true}
     - utter_car_specifics

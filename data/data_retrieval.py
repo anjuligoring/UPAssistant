@@ -2,118 +2,7 @@ import urllib.request
 import json
 import requests
 
-sample_data = {
-  "id": "SHMC6134",
-  "empty": "false",
-  "commodity": "Coal",
-  "carType": "Uncovered Hopper",
-  "serviceIssue": {
-    "referenceNumber": "00516",
-    "status": "Open"
-  },
-  "eta": "2018-07-23T05:04:00.000-05:00",
-  "completedEvents": [
-    {
-      "name": "Released for Movement",
-      "dateTime": "2018-06-04T13:47:00.000-05:00",
-      "location": {
-        "city": "Stexlead",
-        "state": "TX"
-      }
-    },
-    {
-      "name": "Pulled from Industry",
-      "dateTime": "2018-06-12T09:07:00.000-05:00",
-      "location": {
-        "city": "Stexlead",
-        "state": "TX"
-      }
-    },
-    {
-      "name": "Arrived",
-      "dateTime": "2018-06-12T10:09:00.000-05:00",
-      "location": {
-        "city": "Stexlead",
-        "state": "TX"
-      }
-    },
-    {
-      "name": "Departed",
-      "dateTime": "2018-06-22T11:02:00.000-05:00",
-      "location": {
-        "city": "Stexlead",
-        "state": "TX"
-      }
-    },
-    {
-      "name": "Arrived",
-      "dateTime": "2018-06-22T14:20:00.000-05:00",
-      "location": {
-        "city": "Texarkana",
-        "state": "AR"
-      }
-    },
-    {
-      "name": "General Hold",
-      "dateTime": "2018-06-25T22:12:00.000-05:00",
-      "location": {
-        "city": "Texarkana",
-        "state": "AR"
-      }
-    },
-    {
-      "name": "Released from Hold",
-      "dateTime": "2018-07-05T15:57:00.000-05:00",
-      "location": {
-        "city": "Texarkana",
-        "state": "AR"
-      }
-    }
-  ],
-  "scheduledEvents": [
-    {
-      "name": "Scheduled Departure",
-      "dateTime": "2018-07-21T11:15:00.000-05:00",
-      "location": {
-        "city": "Stexlead",
-        "state": "TX"
-      }
-    },
-    {
-      "name": "Scheduled Arrival",
-      "dateTime": "2018-07-21T20:00:00.000-05:00",
-      "location": {
-        "city": "Texarkana",
-        "state": "AR"
-      }
-    },
-    {
-      "name": "Scheduled Departure",
-      "dateTime": "2018-07-22T23:11:00.000-05:00",
-      "location": {
-        "city": "Texarkana",
-        "state": "AR"
-      }
-    },
-    {
-      "name": "Scheduled Arrival",
-      "dateTime": "2018-07-23T05:04:00.000-05:00",
-      "location": {
-        "city": "Nlitrock",
-        "state": "AR"
-      }
-    },
-    {
-      "name": "Scheduled Departure",
-      "dateTime": "2018-07-24T13:00:00.000-05:00",
-      "location": {
-        "city": "Nlitrock",
-        "state": "AR"
-      }
-    }
-  ]
-}
-
+# Estimates cost of trip between locations
 def get_quote_price(origin, destination):
     origin = origin.replace(" ", "+") + "+USA"
     destination = destination.replace(" ", "+") + "+USA"
@@ -130,14 +19,20 @@ def get_quote_price(origin, destination):
     cost = str('${:,.2f}'.format(cost))
     return cost
 
-def get_data():
-    json_data = json.dumps(sample_data)
-    data = json.loads(json_data)
+# Retrieves car data in JSON format
+def get_data(car_id):
+    url = 'http://198.47.241.137:1337/car/' + car_id
+    data = requests.get(url).json()
     return data
 
-def get_car_info():
-    data = get_data()
-    
+# Checks if car is valid
+def is_car(car_id):
+    data = get_data(car_id)
+    return 'id' in data
+
+# Retrieves car information
+def get_car_info(car_id):
+    data = get_data(car_id)
     car_id = data['id']
     car_type = data['carType']
     empty = data['empty']
@@ -147,8 +42,9 @@ def get_car_info():
         commodity = data['commodity']
         return car_id + ' is a(n) ' + car_type + ' full of ' + commodity + '.'
 
-def get_car_status():
-    data = get_data()
+# Retrieves & calculates percentage of journey completed
+def get_car_status(car_id):
+    data = get_data(car_id)
 
     num_completed = 0.0
     completed_events = data['completedEvents']
@@ -165,10 +61,11 @@ def get_car_status():
     completion_percent = float(num_completed / (num_completed + num_remaining))
     completion_percent = "{0:.2%}".format(completion_percent)
 
-    return completion_percent
+    return 'Progress: ' + completion_percent
 
-def get_car_eta():
-    data = get_data()
+# Retrieves & formats estimated time of arrival
+def get_car_eta(car_id):
+    data = get_data(car_id)
     eta = data['eta']
 
     year = eta[:4]
@@ -198,17 +95,19 @@ def get_car_eta():
     month = switcher.get(month, 'Invalid Month')
     date = month + " " + day + ", " + year
     time = (str)(hour) + ":" + min + " " + ampm
-    return date + " @ " + time
+    return 'ETA: ' + date + " @ " + time
 
-def get_car_service_issues():
-    data = get_data()
+# Retrieves service issues
+def get_car_service_issues(car_id):
+    data = get_data(car_id)
     if('serviceIssue' not in data):
         return 'There are no service issues!'
     else:
         return 'WARNING: You have a service issue. Your reference # is ' + data['serviceIssue']['referenceNumber'] + '.'
 
-def get_car_last_completed_event():
-    data = get_data()
+# Retrieves last completed event
+def get_car_last_completed_event(car_id):
+    data = get_data(car_id)
     last_completed_event = data['completedEvents'][0]
     eta = last_completed_event['dateTime']
 
@@ -243,8 +142,9 @@ def get_car_last_completed_event():
 
     return 'The last completed event was \"' + last_completed_event['name'] + '\", which occured on ' + last_event_time + '.'
 
-def get_car_next_scheduled_event():
-    data = get_data()
+# Retrieves next scheduled event
+def get_car_next_scheduled_event(car_id):
+    data = get_data(car_id)
     next_scheduled_event = data['scheduledEvents'][0]
     eta = next_scheduled_event['dateTime']
 

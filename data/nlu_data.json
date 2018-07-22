@@ -1,5 +1,11 @@
 {
 	"rasa_nlu_data": {
+		"regex_features": [
+			{
+				"name": "car_id",
+				"pattern": "^[a-zA-Z]{4}[0-9]{4}"
+			}
+		],
 		"common_examples": [
 			{
 				"text": "It is so wholesome.",

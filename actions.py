@@ -54,12 +54,12 @@ class ActionGetCarInfo(Action):
     def run(self, dispatcher, tracker, domain):
         # Verify Car ID
         car_id = str(tracker.get_slot('car_id')).upper()
-        if car_id != 'SHMC6134':
+        if (data_retrieval.is_car(car_id)) is False:
             return [SlotSet('is_valid', False)]
         else:
-            info = data_retrieval.get_car_info()
+            info = data_retrieval.get_car_info(car_id)
             dispatcher.utter_message(info)
-        rreturn [SlotSet('is_valid', True)]
+        return [SlotSet('is_valid', True)]
 
 class ActionGetCarStatus(Action):
 
@@ -69,11 +69,11 @@ class ActionGetCarStatus(Action):
     def run(self, dispatcher, tracker, domain):
         # Verify Car ID
         car_id = str(tracker.get_slot('car_id')).upper()
-        if car_id != 'SHMC6134':
+        if (data_retrieval.is_car(car_id)) is False:
             return [SlotSet('is_valid', False)]
         else:
-            status = data_retrieval.get_car_status()
-            dispatcher.utter_message('Progress: ' + status + ' completed')
+            status = data_retrieval.get_car_status(car_id)
+            dispatcher.utter_message(status)
         return [SlotSet('is_valid', True)]
 
 class ActionGetCarETA(Action):
@@ -84,11 +84,11 @@ class ActionGetCarETA(Action):
     def run(self, dispatcher, tracker, domain):
         # Verify Car ID
         car_id = str(tracker.get_slot('car_id')).upper()
-        if car_id != 'SHMC6134':
+        if (data_retrieval.is_car(car_id)) is False:
             return [SlotSet('is_valid', False)]
         else:
-            eta = data_retrieval.get_car_eta()
-            dispatcher.utter_message('ETA: ' + eta)
+            eta = data_retrieval.get_car_eta(car_id)
+            dispatcher.utter_message(eta)
         return [SlotSet('is_valid', True)]
 
 class ActionGetCarServiceIssues(Action):
@@ -99,10 +99,10 @@ class ActionGetCarServiceIssues(Action):
     def run(self, dispatcher, tracker, domain):
         # Verify Car ID
         car_id = str(tracker.get_slot('car_id')).upper()
-        if car_id != 'SHMC6134':
+        if (data_retrieval.is_car(car_id)) is False:
             return [SlotSet('is_valid', False)]
         else:
-            service_issues = data_retrieval.get_car_service_issues()
+            service_issues = data_retrieval.get_car_service_issues(car_id)
             dispatcher.utter_message(service_issues)
         return [SlotSet('is_valid', True)]
 
@@ -114,10 +114,10 @@ class ActionGetCarLastCompletedEvent(Action):
     def run(self, dispatcher, tracker, domain):
         # Verify Car ID
         car_id = str(tracker.get_slot('car_id')).upper()
-        if car_id != 'SHMC6134':
+        if (data_retrieval.is_car(car_id)) is False:
             return [SlotSet('is_valid', False)]
         else:
-            last_completed_event = data_retrieval.get_car_last_completed_event()
+            last_completed_event = data_retrieval.get_car_last_completed_event(car_id)
             dispatcher.utter_message(last_completed_event)
         return [SlotSet('is_valid', True)]
 
@@ -129,10 +129,10 @@ class ActionGetCarNextScheduledEvent(Action):
     def run(self, dispatcher, tracker, domain):
         # Verify Car ID
         car_id = str(tracker.get_slot('car_id')).upper()
-        if car_id != 'SHMC6134':
+        if (data_retrieval.is_car(car_id)) is False:
             return [SlotSet('is_valid', False)]
         else:
-            next_scheduled_event = data_retrieval.get_car_next_scheduled_event()
+            next_scheduled_event = data_retrieval.get_car_next_scheduled_event(car_id)
             dispatcher.utter_message(next_scheduled_event)
         return [SlotSet('isValid', True)]
 

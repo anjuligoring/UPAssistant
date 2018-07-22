@@ -2158,7 +2158,12 @@
         "text": "poqu7654 future event"
       }
     ],
-    "regex_features": [],
+    "regex_features": [
+      {
+        "name": "car_id",
+        "pattern": "^[a-zA-Z]{4}[0-9]{4}"
+      }
+    ],
     "entity_synonyms": []
   }
 }
